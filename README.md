@@ -1,2 +1,2 @@
-# a0-example-plugin
-Example plugin for testing
+# Example plugin 1
+README.md file for the example plugin 1

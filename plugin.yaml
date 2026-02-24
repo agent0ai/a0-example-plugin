@@ -1,0 +1,10 @@
+name: Example Plugin 1
+description: Just an example to demonstrate plugin structure
+version: 1.0.0
+settings_sections:
+  - example
+  - test
+  - template
+per_project_config: true
+per_agent_config: true
+always_enabled: false

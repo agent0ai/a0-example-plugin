@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Config</title>
+</head>
+
+<body>
+    <div x-data>
+        <template x-if="$store.pluginSettings.settings">
+            <div>
+                <div class="section-title">Demo Configuration</div>
+                <div class="section-description">
+                    Minimal settings UI for the demo plugin.
+                </div>
+
+                <div class="field">
+                    <div class="field-label">
+                        <div class="field-title">Assistant name</div>
+                        <div class="field-description">Maps to <code>assistant_name</code> in <code>default_config.yaml</code>.</div>
+                    </div>
+                    <div class="field-control">
+                        <input type="text" x-model="$store.pluginSettings.settings.assistant_name" />
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">
+                        <div class="field-title">Age</div>
+                        <div class="field-description">Maps to <code>age</code> in <code>default_config.yaml</code>.</div>
+                    </div>
+                    <div class="field-control">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <input type="range" min="18" max="65" step="1" x-model.number="$store.pluginSettings.settings.age" />
+                            <span x-text="$store.pluginSettings.settings.age"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">
+                        <div class="field-title">Voice</div>
+                        <div class="field-description">Maps to <code>voice</code> in <code>default_config.yaml</code>.</div>
+                    </div>
+                    <div class="field-control">
+                        <select x-model="$store.pluginSettings.settings.voice">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</body>
+
+</html>

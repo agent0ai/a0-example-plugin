@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Plugin</title>
+    <style>
+        :root {
+            --bg: #0b0f17;
+            --panel: rgba(255, 255, 255, 0.06);
+            --text: rgba(255, 255, 255, 0.92);
+            --muted: rgba(255, 255, 255, 0.65);
+        }
+
+        #a0-example-plugin {
+            margin: 0;
+            padding: 24px;
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+                "Segoe UI Emoji";
+            background: radial-gradient(1200px 600px at 20% 0%, rgba(99, 102, 241, 0.25), transparent 55%),
+                radial-gradient(900px 500px at 100% 20%, rgba(16, 185, 129, 0.18), transparent 55%),
+                var(--bg);
+            color: var(--text);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #a0-example-plugin .container {
+            max-width: 980px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #a0-example-plugin .header {
+            display: flex;
+            gap: 16px;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 18px;
+        }
+
+        #a0-example-plugin .title {
+            font-size: 18px;
+            font-weight: 650;
+            margin: 0;
+        }
+
+        #a0-example-plugin .subtitle {
+            margin: 0;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        #a0-example-plugin .panel {
+            background: var(--panel);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #a0-example-plugin .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        #a0-example-plugin .tile {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--c1), var(--c2));
+            border: 1px solid rgba(255, 255, 255, 0.10);
+        }
+    </style>
+</head>
+<body>
+    <div id="a0-example-plugin">
+        <div class="container">
+            <div class="header">
+                <div>
+                    <h1 class="title">Example Plugin</h1>
+                    <p class="subtitle">Dummy main screen layout (demo)</p>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="grid">
+                    <div class="tile" style="--c1:#60a5fa;--c2:#a78bfa"></div>
+                    <div class="tile" style="--c1:#34d399;--c2:#60a5fa"></div>
+                    <div class="tile" style="--c1:#f472b6;--c2:#fb7185"></div>
+                    <div class="tile" style="--c1:#fbbf24;--c2:#fb7185"></div>
+                    <div class="tile" style="--c1:#22d3ee;--c2:#60a5fa"></div>
+                    <div class="tile" style="--c1:#a3e635;--c2:#34d399"></div>
+                    <div class="tile" style="--c1:#c084fc;--c2:#22d3ee"></div>
+                    <div class="tile" style="--c1:#fb7185;--c2:#fbbf24"></div>
+                    <div class="tile" style="--c1:#60a5fa;--c2:#22d3ee"></div>
+                    <div class="tile" style="--c1:#34d399;--c2:#a3e635"></div>
+                    <div class="tile" style="--c1:#a78bfa;--c2:#c084fc"></div>
+                    <div class="tile" style="--c1:#fbbf24;--c2:#60a5fa"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
