@@ -1,3 +1,4 @@
+name: example_plugin
 title: Example Plugin 1
 description: Just an example to demonstrate plugin structure
 version: 1.0.0
