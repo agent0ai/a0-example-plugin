@@ -1,7 +1,7 @@
 name: te_st1
 title: Example Plugin 1
 description: Just an example to demonstrate plugin structure
-version: 1.0.0
+version: 1.0.1
 settings_sections:
   - example
   - test
