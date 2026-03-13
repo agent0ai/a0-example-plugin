@@ -5,7 +5,7 @@
 
 <body>
     <div x-data>
-        <template x-if="$store.pluginSettings.settings">
+        <template x-if="config">
             <div>
                 <div class="section-title">Demo Configuration</div>
                 <div class="section-description">
@@ -18,7 +18,7 @@
                         <div class="field-description">Maps to <code>assistant_name</code> in <code>default_config.yaml</code>.</div>
                     </div>
                     <div class="field-control">
-                        <input type="text" x-model="$store.pluginSettings.settings.assistant_name" />
+                        <input type="text" x-model="config.assistant_name" />
                     </div>
                 </div>
 
@@ -29,8 +29,8 @@
                     </div>
                     <div class="field-control">
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <input type="range" min="18" max="65" step="1" x-model.number="$store.pluginSettings.settings.age" />
-                            <span x-text="$store.pluginSettings.settings.age"></span>
+                            <input type="range" min="18" max="65" step="1" x-model.number="config.age" />
+                            <span x-text="config.age"></span>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                         <div class="field-description">Maps to <code>voice</code> in <code>default_config.yaml</code>.</div>
                     </div>
                     <div class="field-control">
-                        <select x-model="$store.pluginSettings.settings.voice">
+                        <select x-model="config.voice">
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
